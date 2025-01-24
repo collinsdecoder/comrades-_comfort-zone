@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online bus service</title>
+    <script>  /* adding script to the html file*/
+        function redirectToService(selectElement) {
+            var selectedValue=selectElement.value;
+            if (selectedValue) {
+                window.location.href=selectedValue
+            }
+        }
+    </script> 
+    <!--styling the html file using CSS-->
+    <style>
+        div{
+            background-color: bisque;
+        }
+        h1{
+            text-align: center;
+            text-shadow: #28a745;
+            font-family: 'Times New Roman', Times, serif;
+            color: burlywood;
+            top: 15%;
+        }
+        p{
+            font-size: 19px;
+            text-align: center;
+            color: #989898;
+        }
+        h2{
+            
+        background-color: teal  ; /*this will cater for bg color*/
+        padding: 12px;
+        border-radius: 1rem;
+        cursor: not-allowed;
+        }
+        option{
+            color: #28a745;
+            background-color:black ;
+        }
+        option:hover{
+            background-color: yellow;
+        }
+        body{
+            
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin-top: 60px;
+        }
+        select{
+            
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        border-radius: 1rem;
+        }
+        .bus-routes{ /* styling the main  div*/
+            
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav{
+        }
+        
+            
+            
+        
+
+
+    </style>
+</head>
+<body>
+    <nav> <!--navigation top bar-->
+        
+    
+        
+
+    </nav>
+    <h1>Enjoy you ride country wide and safe journey as always</h1>
+    <div class="bus-routes">
+        <div class="rout1">
+        <h2>Meru-Nairobi</h2>
+        <select onchange="redirectToService(this)" >
+            <option value="">--Select bus service--</option>
+            <option value="https://tiketi.com/en-ke/companies/buses/neno-sacco/">Neno Sacco</option>
+            <option value="https://easycoachkenya.com/">Easy Coach</option>
+            <option value="https://safaribay.net/unique-shuttle-contact-number/">Unique Shuttle</option>
+        </select>
+        </div>
+        <div class="route2">
+            <h2>Meru-Mombasa</h2>
+            <select onchange="redirectToService(this)" >
+                <option value="">--Select bus service--</option>
+                <option value="https://tiketi.com/imani-coach/">Imani Coach</option>
+                <option value="https://tahmeedexpress.com/#/">Tamheed</option>
+                <option value="https://www.coastbus.co.ke/">Coast bus</option>
+                <option value="https://modern.co.ke/">Mordern Coast express</option>
+                <option value="https://www.mybus.co.ke/">My bus</option>
+
+            </select>
+        </div>
+        <div class="route3">
+            <h2>Nairobi-Mombasa</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select bus service--</option>
+                <option value="https://modern.co.ke/">Mordern Coast</option>
+                <option value="https://theguardian.co.ke/">The Guardian Coach</option>
+                <option value="https://dreamline.co.ke/">Dreamline</option>
+                <option value="https://mashpoa.co/">Mash poa</option>
+                <option value="https://www.coastbus.co.ke/">Coast bus</option>
+            </select>
+        </div>
+        <div class="route4">
+            <h2>Nairobi-Kakamega</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select bus service--</option>
+                <option value="https://easycoachkenya.com/">Easy coach</option>
+                <option value="https://theguardian.co.ke/">The Guardian Coach</option>
+                <option value="https://www.enacoach.co.ke/">Ena coach</option>
+                <option value="https://tiketi.com/companies/buses/western-express-coach">Western express coach</option>
+                <option value="https://mnetizen.co.ke/sheng/businesses/kukena-shuttle">Kukena</option>
+                <option value="https://www.crownbus.co/">Crown bus</option>
+            </select>
+        </div>
+        <div class="route5">
+            <h2>Nairobi-Turkana</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select bus service--</option>
+                <option value="https://tahmeedexpress.com/#/">Tamheed</option>
+                <option value="https://dreamline.co.ke/">Dreamline</option>
+                <option value="https://greenlinesafaris.com/">Greenline</option>
+                <option value="https://mnetizen.co.ke/sheng/businesses/kukena-shuttle">Kukena</option>
+                <option value="https://www.crownbus.co/">Crown bus</option>
+
+            </select>
+        </div>
+        <div class="route6">
+            <h2>Nairobi-Garisa</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select bus service</option>
+                <option value="https://tiketi.com/garissa-coach-buses/">Garissa Coach</option>
+                <option value="http://rayan.co.ke/#!/">Rayan Coach</option>
+                <option value="https://tiketi.com/companies/buses/planet-coach/">Planet  Coach</option>
+                <option value="https://tiketi.com/en-ke/alma-air-buses/">Alma Air</option>
+                <option value="https://safaribay.net/muhsin-bus-mombasa-online-booking/">Muhsin</option>
+            </select>
+        </div>
+        <div class="route7">
+            <h2>Nairobi-Kisumu-Siaya</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select bus service--</option>
+                <option value="https://theguardian.co.ke/">The Guardian Coach</option>
+                <option value="https://www.enacoach.co.ke/">Ena Coach</option>
+                <option value="https://easycoachkenya.com/">Easy Coach</option>
+
+            </select>
+        </div>
+        <div class="route8">
+            <h2>Nairobi-Migori</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Selct bus service</option>
+                <option value="https://easycoachkenya.com/">Easy Coach</option>
+                <option value="https://www.enacoach.co.ke/">Ena Coach</option>
+                <option value="https://theguardian.co.ke/">The Guardian Coach</option>
+                <option value="https://tahmeedexpress.com/#/">Tamheed</option>
+                <option value="https://tiketi.com/nyamira-express-buses/">Nyamira Express</option>
+
+            </select>
+
+        </div>
+        <div class="copy-write">
+            <p>&copy;mc colloh ke</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Contents</title>
+    <script>
+        function redirectToService(selectElement) {
+            var selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.location.href = selectedValue; // Redirect to the selected URL
+            }
+        }
+    </script>
+</head>
+<style>
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        filter:blur(0.1px)
+    }
+    h2{
+        background-color: #28a745 ; /*this will cater for bg color*/
+        padding: 12px;
+        border-radius: 1rem;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    nav {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background 0.3s;
+        text-align: center;
+    }
+    
+        
+    
+    .body {
+        margin-top: 60px; /* Adjust for fixed nav */
+        padding: 20px;
+        text-align: center;
+    }
+    .sec {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    button:hover {
+        background-color: #218838;
+    }
+    .buttons {
+        text-align: center;
+        margin: 20px 0;
+    }
+    nav:hover{
+        background-color: teal;
+    }
+        
+    
+    a{
+        font-size: 30px;
+        font-family:fantasy;
+    }
+    a:hover{
+        background-color: #218838;
+        border-radius: 2rem;
+        margin-right: 5px;
+        color: black;
+    }
+</style>
+<body>
+    <!--adding the navigation bar-->
+    <nav> 
+        <a href="">HOME</a>
+        <a href="">FACTS</a>
+    </nav>
+        <div class="body">
+        <h2>Almost done!! Please select a choice of your own.</h2>
+        <p>Here are some of the services and activities you can enjoy and explore on our website. Welcome and feel free to share the link with your loved ones to also enjoy the site. Please choose an option below👇.</p>
+    </div>
+    <div class="sec">
+        <div class="select1">
+            <h2>Betting</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select a Betting Site--</option>
+                <option value="https://www.betika.com/en/casino?category=Drops%20and%20Wins&utm_medium=pop_under&utm_source=propeller-ads&utm_campaign=po_under_ke_acq_en_cas_drops-and-wins">Betika</option>
+                <option value="https://www.bangbet.com/">Bang Bet</option>
+                <option value="https://wezabet.ke">WEZABET</option>
+                <option value="https://betfalme.ke/?page=1">BetFalme</option>
+                <option value="https://1xbet.co.ke/">1Xbet</option>
+                <option value="https://www.mozzartbet.co.ke/en#/">Mozzartbet</option>
+                <option value="https://betgr8.com/ke/">Betgr8</option>
+                <option value="https://chapabet.com/">Chapabet</option>
+                <option value="https://betwinner.co.ke/login/">Betwinner</option>
+                <option value="https://pepeta.com/">Pepeta bet</option>
+            </select>
+        </div>
+
+        <div class="select2">
+            <h2>Trading</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select a Trading Site--</option>
+                <option value="https://www.forex.com/en/">Forex</option>
+                <option value="https://expertoption.com/login/">Expert Option</option>
+                <option value="https://pocketoption.com/en">Pocket Option</option>
+                <option value="https://www.metatrader4.com/en/download">Meta Trader 4</option>
+                <option value="https://ninjatrader.com/">Ninja Trader</option>
+                <option value="https://www.binance.com/en">Binance</option>
+            </select>
+        </div>
+
+        <div class="select3">
+            <h2>Government Services</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select a Government Service--</option>
+                <option value="https://portal.hef.co.ke/auth/signin">HELB</option>
+                <option value="https://students.kuccps.net/login/">KUCCPS</option>
+                <option value="https://accounts.ecitizen.go.ke/en/login?redirect=%2Fen%2Fverify-mobile">eCitizen</option>
+                <option value="https://education.go.ke/">Ministry of Education</option>
+            </select>
+        </div>
+
+        <div class="select4">
+            <h2>Online Business</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select an Online Business--</option>
+                <option value="https://lipaearn.com/login.php">Lipa Earn Agencies</option>
+                <option value="https://account.bitpesa.co/">BitPesa</option>
+                <option value="https://www.fxpesa.com/ke-en/">FXPesa</option>
+                <option value="https://hyperqash.com/">HyperQash Agencies</option>
+                <option value="https://www.upwork.com/">Upwork</option>
+                <option value="https://www.piggyvest.com/">PiggyVest</option>
+                <option value="https://www.etoro.com/">eToro</option>
+                <option value="https://paxful.com/">Paxful</option>
+            </select>
+        </div>
+
+        <div class="select5">
+            <h2>Online Dating</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select an Online Dating Site--</option>
+                <option value="https://hinge.co/">Hinge</option>
+                <option value="https://www.okcupid.com/">OkCupid</option>
+                <option value="https://bumble.com/">Bumble</option>
+                <option value="https://tinder.com/">Tinder</option>
+                <option value="https://www.kenyancupid.com/">KenyanCupid</option>
+            </select>
+        </div>
+
+        <div class="select6">
+            <h2>AI/GPTs</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select an AI/GPT--</option>
+                <option value="https://www.questionai.com/">QUESTION AI</option>
+                <option value="https://chatgpt.com/">CHAT GPT</option>
+                <option value="https://copilot.microsoft.com/chats/wXSmBwSv4KyK2sUiJZRwu">COPILOT</option>
+                <option value="https://www.jasper.ai/">JASPER AI</option>
+                <option value="https://claude.ai/login?returnTo=%2F%3F">CLAUDE</option>
+                <option value="https://www.perplexity.ai/">PERPLEXITY AI</option>
+            </select>
+        </div>
+
+        <div class="select7">
+            <h2>Loans</h2>
+            <select onchange="redirectToService(this)">
+                <option value="">--Select a Loan Provider--</option>
+                <option value="https://littlepesa.com/">Little Pesa</option>
+                <option value="https://www.zepesa.com/">Zepesa</option>
+                <option value="https://zenka.co.ke/">Zenka</option>
+                <option value="https://tala.co.ke/">Tala</option>
+                <option value="https://lendplus.ke/">LendPlus</option>
+            </select>
+        </div>
+    </div>
+
+    <br>
+    <div class="main" style="text-align: center;">
+        <h3>To stream any Football match and access online Bus booking, click the buttons below👇</h3>
+    </div>
+    <div class="buttons">
+        <a href="https://afr.score808.tv/">
+            <button type="button">Live Streaming</button>
+        </a>
+        <a href="onlinebusbooking.html">
+            <button type="button">Online Bus Booking</button>
+        </a>
+    </div>
+</body>
+</html>
